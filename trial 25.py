@@ -1,0 +1,5 @@
+myfile = open("book.txt",'r')
+str = myfile.read()
+size = len(str) 
+print(size)
+myfile.close()

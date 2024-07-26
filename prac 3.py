@@ -1,0 +1,13 @@
+import mysql.connector
+mydb=mysql.connector.connect(host='localhost',user='root',passwd='******************',database='employee')
+mycursor=mydb.cursor()
+mycursor.execute("Create table Employee(ENO integer, Name char(20),designation char(20),salary int,deptno int)")
+mycursor.execute("insert into employee values(45,'Ramanuj Singh','Director',90000,10)")
+mydb.commit()
+mycursor.execute("insert into employee values(32,'Gareema Seth','Manager',78000,20)")
+mydb.commit()
+mycursor.execute("insert into Employee values(12,'John Brooke','Accountant',25000,20)")
+mydb.commit()
+mycursor.execute("insert into employee values(9,'Ahmed Abdul','Manager',78000,30)")
+mydb.commit()
+print("RECORDS INSERTED SUCCESSFULLY")
