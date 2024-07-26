@@ -1,0 +1,2 @@
+
+open("fnew.txt","r")

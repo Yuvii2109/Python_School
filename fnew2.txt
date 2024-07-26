@@ -1,0 +1,1 @@
+I am using with statement It closes file automatically
